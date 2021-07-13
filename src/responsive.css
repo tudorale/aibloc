@@ -1,0 +1,462 @@
+/* navbar */
+@media only screen and (max-width: 770px){
+
+    .hamburger{
+        display: flex;
+    }
+
+    .insideWrapper{
+        z-index: -1;
+    }
+
+    
+    .navWrapper{
+     display: flex;
+     flex-direction: column;
+     position: fixed;
+     background-color: var(--main-color);
+     height: 600px;
+     width: 250px;
+     opacity: 0;
+     z-index: -1;
+     text-align: start;
+     transition: all 350ms linear;
+     left: -250px;
+     border-bottom-right-radius: 30px;
+    }
+
+    .rightLinks{
+        position: relative;
+        flex-direction: column;
+        height: 70px;
+        justify-content: space-between;
+        margin-right: 0px;
+        margin-top: 30px;
+    }
+    .leftLinks{
+        flex-direction: column;
+        height: 150px;
+        margin-top: 50px;
+        justify-content: space-between;
+        
+    }
+    .leftLinks li a{
+        color: white;
+    }
+
+    .rightLinks p a{
+        color: white;
+    }
+
+    .rightLinks p a:hover{
+        color: white;
+    }
+
+    .rightLinks button{
+        font-size: 1.15rem;
+        font-weight: 500;
+        margin-left: 10px;
+    }
+    
+    .rightLinks button:hover{
+        background: var(--main-color-lighter);
+    }
+
+}
+
+/* content */
+
+@media only screen and (max-width: 1255px){
+    .insideWrapper{
+        max-width: unset;
+        margin: unset;
+        width: fit-content;
+        left: 25px;
+    }
+
+    .section-one .content{
+        margin: unset;
+        max-width: unset; /* same as .insideWrapper */
+        padding-top: 40px;
+        color: white;
+        margin-left: 25px;
+        grid-column-gap: 0px;
+    }
+
+    .section-one .content .right{
+        width: 500px;
+        margin-left: -20px;
+    }
+
+    .sliderWrapper video{
+        width: 450px;
+        
+    }
+
+}
+
+@media only screen and (max-width: 1250px){
+    .insideWrapper .hero .right #inside{
+        width: 37vw;
+        height: 450px;
+    }
+
+    .insideWrapper .hero .right{
+        margin-left: 10px;
+    }
+}
+
+@media only screen and (max-width: 1145px){
+    .section-one .content .right{
+        width: 450px;
+    }
+    .sliderWrapper video{
+        width: 400px;
+    }
+}
+
+@media only screen and (max-width: 1100px){
+    .section-three .content .right{
+        display: none;
+    }
+
+    .insideWrapper .hero .right{
+        display: none;
+    }
+
+    .section-three .content{
+        grid-template-columns: auto;
+        justify-content: start;
+        margin-left: 25px;
+    }
+
+    .section-four .content{
+        width: fit-content;
+        margin: unset;
+        left: 25px;
+        justify-content: start;
+    }
+
+    .section-five .content{
+        width: fit-content;
+        justify-content: start;
+        margin: unset;
+        left: 25px;
+    }
+
+    .section-six .content{
+        display: grid;
+        width: fit-content;
+        margin: 0 auto;
+        grid-row-gap: 80px;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto;
+    }
+}
+
+@media only screen and (max-width: 1080px){
+    .section-one .content .right{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 1035px){
+    .section-four .content .image{
+        display: none;
+    }
+    
+    .section-four .content .text{
+        display: none;
+    }
+    .section-four .content{
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto;
+        grid-column-gap: 30px;
+        left: 0px;
+        grid-template-areas: 
+        "one two"
+        "three ."
+        ;
+        margin: 0 auto;
+    }
+
+    .section-five{
+        top: 200px;
+    }
+    
+    .section-five .content{
+        grid-template-columns: auto auto;
+        grid-template-rows: auto;
+        grid-column-gap: 30px;
+        margin: 0 auto;
+        top: 50px;
+        left: 0px;
+        grid-template-areas: 
+        "one three"
+        ;
+    }
+
+    .section-five .content .card-4{
+        display: none;
+    }
+    
+    .section-five .content .card-2{
+        display: none;
+    }
+
+    .section-five .content .card-3{
+        margin-top: 0px;
+    }
+
+    .section-five .content .card{
+        width: 420px;
+    }
+
+    .section-six{
+        top: 330px;
+    }
+
+    .information{
+        top: 500px;
+        padding: 0 30px;
+    }
+
+    .footer{
+        top: 900px;
+    }
+}
+
+@media only screen and (max-width: 925px){
+    .section-four .content{
+        grid-template-columns: auto;
+        grid-template-rows: auto auto auto;
+        grid-column-gap: 0px;
+        left: 0px;
+        grid-template-areas: 
+        "one"
+        "two"
+        "three"
+        ;
+        margin: 0 auto;
+    }
+
+    .section-five .content{
+        grid-template-columns: auto;
+        grid-template-rows: auto auto;
+        grid-column-gap: 0px;
+        left: 0px;
+        grid-row-gap: 50px;
+        grid-template-areas: 
+        "one"
+        "three"
+        ;
+    }
+}
+
+@media only screen and (max-width: 800px){
+
+    .footer h1{
+        left: 10px;
+    }
+
+    .footer .copyright{
+        font-size: 1.2rem;
+        position: absolute;
+        bottom: 50px;
+        left: 10px;
+    }
+    
+    .footer .legalLinks{
+        position: absolute;
+        left: 0px;
+        bottom: 10px;
+    }
+
+}
+
+@media only screen and (max-width: 750px){
+    .section-six .content{
+        display: grid;
+        width: fit-content;
+        margin: 0 auto;
+        margin-top: 30px;
+        grid-row-gap: 80px;
+        grid-template-columns: auto;
+        grid-template-rows: auto auto auto;
+    }
+
+    .section-six .card svg{
+        width: 50px;
+        height: 50px;
+    }
+
+    .insideWrapper .hero .left h1{
+        font-size: 2.5rem;
+    }
+
+    .addon{
+        display: none;
+    }
+
+    .section-one{
+        height: auto;
+    }
+
+    .section-one .content{
+        padding-bottom: 20px;
+    }    
+
+    .section-one .content .note{
+        font-size: 1.2rem;
+    }
+    
+    .section-one .content .title{
+        margin: 10px 0px;
+        font-size: 2rem;
+    }
+    
+    .section-one .content p{
+        font-size: 1.2rem;
+        width: auto;
+        padding-right: 20px;
+    }
+
+    .sectionsWrapper{
+        top: 220px;    
+    }
+    
+    .sectionsWrapper h1{
+        font-size: 2.1rem;
+    }
+
+    .section-three .content h2{
+        font-size: 1.5rem;
+    }
+
+    .section-three .content p{
+        font-size: 1.25rem;
+        width: auto;
+        padding-right: 20px;
+    }
+    
+    .section-four{
+        top: 100px;
+    }
+    
+    .section-four h1 span::before{
+        display: none;
+    }
+
+    .section-four h1 span{
+        color: var(--main-color);
+    }
+
+    .section-five{
+        top: 170px;
+    }
+
+    .section-five .content{
+        top: 30px;
+    }
+
+    .section-six{
+        top: 270px;
+    }
+
+    .section-six .content{
+        margin-top: 0px;
+    }
+
+    .information{
+        top: 410px;
+    }
+
+    .footer{
+        top: 730px;
+    }
+}
+
+@media only screen and (max-width: 650px){
+    .insideWrapper .hero .left{
+        width: 400px;
+    }
+
+    .insideWrapper .hero{
+        grid-column-gap: 0px;
+    }
+
+    .footer{
+        height: 400px;
+    }
+
+    .footer .links{
+        left: 10px;
+        top: 100px;
+    }
+
+    .footer .links .products{
+        margin-right: 30px;
+    }
+    
+}
+
+@media only screen and (max-width: 600px){
+    .section-one .content{
+        margin-left: 10px;
+    }
+    .section-one .content .left{
+        width: auto;
+    }
+    .section-one .content .left p{
+        width: 100%;
+        padding-right: 10px;
+    }    
+
+}
+
+@media only screen and (max-width: 500px){
+    .section-four .content .card, .section-five .content .card{
+        width: auto;
+        padding: 0 20px;
+    }
+
+    .section-five .content{
+        top: 50px;
+        grid-row-gap: 30px;
+    }
+    
+}
+
+
+@media only screen and (max-width: 450px){
+    .insideWrapper .hero .left{
+        width: 320px;
+    } 
+    
+    .section-six .card{
+        width: 300px;
+    }
+
+    .section-six .content .card .features p .true{
+        margin-left: 80px;
+    }
+    
+    .section-six .content .card .features p .false{
+        margin-left: 80px;
+    }
+}
+
+@media only screen and (max-width: 370px){
+    .insideWrapper .hero .left{
+        width: 280px;
+    }
+    .footer .legalLinks{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer .copyright{
+        padding-bottom: 20px;   
+    }
+    
+}

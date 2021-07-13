@@ -1,0 +1,14 @@
+.layerStackNodeHandle {
+  background: #0041d0;
+  height: 30%;
+  width: 104%;
+  opacity: 0.4;
+}
+
+.stackBottomHandle {
+  border-radius: 30% 30% 0 0;
+}
+
+.stackTopHandle {
+  border-radius: 0 0 30% 30%;
+}
